@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>sample</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: Monospace;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .wrapper {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
+
+    canvas {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <img src="./textures/waku.png">
+  </div>
+  <script src="./three.min.js"></script>
+  <script src="./lib/EffectComposer.js"></script>
+  <script src="./lib/MaskPass.js"></script>
+  <script src="./lib/RenderPass.js"></script>
+  <script src="./lib/ShaderPass.js"></script>
+  <script src="./lib/CopyShader.js"></script>
+
+  <script src="./lib/TweenMax.min.js"></script>
+  <script src="./controls/OrbitControls.js"></script>
+  <script src="./controls/DeviceOrientationControls.js"></script>
+  <script src="./bundle.js"></script>
+
+</body>
+
+</html>
